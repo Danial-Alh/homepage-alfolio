@@ -6,7 +6,7 @@ subtitle: Machine Learning
 
 profile:
   align: right
-  image: prof_pic.jpg
+  image: upic.jpg
   image_circular: true # crops the image to make it circular
   address:
 
