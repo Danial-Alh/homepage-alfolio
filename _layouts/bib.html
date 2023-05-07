@@ -29,7 +29,7 @@
         <!-- Entry bib key -->
         <div id="{{entry.key}}" class="col-sm-8">
         <!-- Title -->
-        <div class="title">{{entry.title}}</div>
+        <div class="title"><a href="{{entry.url}}">{{entry.title}}</a></div>
         <!-- Author -->
         <div class="author">
         {% assign author_array_size = entry.author_array | size %}
@@ -173,6 +173,9 @@
             {%- else -%}
             <a href="{{ entry.poster | prepend: '/assets/pdf/' | relative_url }}" class="btn btn-sm z-depth-0" role="button">Poster</a>
             {%- endif %}
+          {%- endif %}
+          {%- if entry.presentation %}
+            <a href="{{ entry.presentation }}" class="btn btn-sm z-depth-0" role="button">Presentation</a>
           {%- endif %}
           {%- if entry.slides %}
             {% if entry.slides contains '://' -%}

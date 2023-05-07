@@ -1,0 +1,35 @@
+@inproceedings{alihosseini-etal-2019-jointly,
+    title = "Jointly Measuring Diversity and Quality in Text Generation Models",
+    author = "Alihosseini, Danial  and
+      Montahaei, Ehsan  and
+      Soleymani Baghshah, Mahdieh",
+    booktitle = "Proceedings of the Workshop on Methods for Optimizing and Evaluating Neural Language Generation",
+    month = jun,
+    year = "2019",
+    address = "Minneapolis, Minnesota",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/W19-2311",
+    arxiv = "1904.03971",
+    presentation = "https://youtu.be/x0MDJe4Oc4k",
+    doi = "10.18653/v1/W19-2311",
+    pages = "90--98",
+    abstract = "Text generation is an important Natural Language Processing task with various applications. Although several metrics have already been introduced to evaluate the text generation methods, each of them has its own shortcomings. The most widely used metrics such as BLEU only consider the quality of generated sentences and neglecting their diversity. For example, repeatedly generation of only one high quality sentence would result in a high BLEU score. On the other hand, the more recent metric introduced to evaluate the diversity of generated texts known as Self-BLEU ignores the quality of generated texts. In this paper, we propose metrics to evaluate both the quality and diversity simultaneously by approximating the distance of the learned generative model and the real data distribution. For this purpose, we first introduce a metric that approximates this distance using n-gram based measures. Then, a feature-based measure which is based on a recent highly deep model trained on a large text corpus called BERT is introduced. Finally, for oracle training mode in which the generatorʼs density can also be calculated, we propose to use the distance measures between the corresponding explicit distributions. Eventually, the most popular and recent text generation models are evaluated using both the existing and the proposed metrics and the preferences of the proposed metrics are determined.",
+}
+
+@article{DBLP:journals/ijon/MontahaeiAB21,
+  author       = {Ehsan Montahaei and
+                  Danial Alihosseini and
+                  Mahdieh Soleymani Baghshah},
+  title        = {{DGSAN:} Discrete generative self-adversarial network},
+  journal      = {Neurocomputing},
+  volume       = {448},
+  pages        = {364--379},
+  year         = {2021},
+  url          = {https://doi.org/10.1016/j.neucom.2021.03.097},
+  arxiv        = {1908.09127},
+  doi          = {10.1016/j.neucom.2021.03.097},
+  timestamp    = {Mon, 14 Jun 2021 08:48:56 +0200},
+  biburl       = {https://dblp.org/rec/journals/ijon/MontahaeiAB21.bib},
+  bibsource    = {dblp computer science bibliography, https://dblp.org},
+  abstract     = "Although GAN-based methods have received many achievements in the last few years, they have not been entirelysuccessful in generating discrete data. The most crucial challenge of these methods is the difficulty of passing the gradientfrom the discriminator to the generator when the generator outputs are discrete. Despite the fact that several attemptshave been made to alleviate this problem, none of the existing GAN-based methods have improved the performance oftext generation compared with the maximum likelihood approach in terms of both the quality and the diversity. In thispaper, we proposed a new framework for generating discrete data by an adversarial approach in which there is no need topass the gradient to the generator. The proposed method has an iterative manner in which each new generator is definedbased on the last discriminator. It leverages the discreteness of data and the last discriminator to model the real datadistribution implicitly. Moreover, the method is supported with theoretical guarantees, and experimental results generallyshow the superiority of the proposed DGSAN method compared to the other popular or recent methods in generatingdiscrete sequential data.",
+}
